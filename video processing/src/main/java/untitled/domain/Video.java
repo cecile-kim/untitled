@@ -22,6 +22,18 @@ public class Video  {
     
     
     private Long id;
+    
+    
+    
+    
+    
+    private Long fileId;
+    
+    
+    
+    
+    
+    private String url;
 
     @PostPersist
     public void onPostPersist(){

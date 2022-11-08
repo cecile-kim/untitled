@@ -9,6 +9,8 @@ import java.util.*;
 public class VideoProcessed extends AbstractEvent {
 
     private Long id;
+    private Long fileId;
+    private String url;
 }
 
 

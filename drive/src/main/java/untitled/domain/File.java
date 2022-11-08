@@ -1,6 +1,7 @@
 package untitled.domain;
 
 import untitled.domain.FileUploaded;
+import untitled.domain.FileDeleted;
 import untitled.DriveApplication;
 import javax.persistence.*;
 import java.util.List;
@@ -48,6 +49,14 @@ public class File  {
         FileUploaded fileUploaded = new FileUploaded(this);
         fileUploaded.publishAfterCommit();
 
+
+
+        FileDeleted fileDeleted = new FileDeleted(this);
+        fileDeleted.publishAfterCommit();
+
+    }
+    @PreRemove
+    public void onPreRemove(){
     }
 
     public static FileRepository repository(){

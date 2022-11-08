@@ -10,6 +10,8 @@ import lombok.*;
 public class UserNotified extends AbstractEvent {
 
     private Long id;
+    private String message;
+    private String userId;
 
     public UserNotified(Notification aggregate){
         super(aggregate);

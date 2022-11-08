@@ -67,6 +67,8 @@
             headers: 
                 [
                     { text: "id", value: "id" },
+                    { text: "message", value: "message" },
+                    { text: "userId", value: "userId" },
                 ],
             notification : [],
             newValue: {},
@@ -84,6 +86,8 @@
             this.values = temp.data._embedded.notifications;
 
             this.newValue = {
+                'message': '',
+                'userId': '',
             }
         },
         methods: {

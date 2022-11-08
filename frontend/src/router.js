@@ -6,6 +6,8 @@ Vue.use(Router);
 
 
 
+import DashboardView from "./components/DashboardView"
+import DashboardViewDetail from "./components/DashboardViewDetail"
 import IndexManager from "./components/listers/IndexCards"
 import IndexDetail from "./components/listers/IndexDetail"
 
@@ -24,6 +26,16 @@ export default new Router({
     base: process.env.BASE_URL,
     routes: [
 
+            {
+                path: '/dashboards',
+                name: 'DashboardView',
+                component: DashboardView
+            },
+            {
+                path: '/dashboards/:id',
+                name: 'DashboardViewDetail',
+                component: DashboardViewDetail
+            },
             {
                 path: '/indices',
                 name: 'IndexManager',

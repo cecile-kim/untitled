@@ -45,6 +45,7 @@ Vue.use(Managing);
 const pluralCaseList = []
 
 
+pluralCaseList.push( {plural: "dashboards", pascal: "Dashboard"} )
 pluralCaseList.push( {plural: "indices", pascal: "Index"} )
 
 pluralCaseList.push( {plural: "notifications", pascal: "Notification"} )

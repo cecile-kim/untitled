@@ -17,6 +17,8 @@
         </v-card-title >
 
         <v-card-text>
+            <String label="Message" v-model="value.message" :editMode="editMode"/>
+            <String label="UserId" v-model="value.userId" :editMode="editMode"/>
         </v-card-text>
 
         <v-card-actions>

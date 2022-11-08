@@ -43,7 +43,7 @@ mvn spring-boot:run
 ```
 - notification
 ```
- http :8088/notifications id="id" 
+ http :8088/notifications id="id" message="message" userId="userId" 
 ```
 - drive
 ```

@@ -22,6 +22,18 @@ public class Notification  {
     
     
     private Long id;
+    
+    
+    
+    
+    
+    private String message;
+    
+    
+    
+    
+    
+    private String userId;
 
     @PostPersist
     public void onPostPersist(){
